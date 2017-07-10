@@ -2,20 +2,21 @@
 
 # Nancy
 
-## Random recommendations
+## Random remarks
 
 - If the robot is not responding, don't turn it off already (can still press the fault button, though)
     let it run for a while (some minutes)
-    maybe a loose ETH cable is causing very slow communications and errors could show up after a long time
+    maybe a loose ethernet cable is causing very slow communications and errors could show up after a long time
 
 - Old iCubs CPU in head : there was no hard disk. It was remotely mounted using NFs (from server). This means the code was shared with the server computer
     => only the server computer needed to be updated
 
 - yarprobotinterface is a bunch of theads of equal priority but transmission tasks need to be run with high priority. The new version in icub-main/master tixes this and offers better debug information with respect to it
+  FIXME: which new version ? The one that is now installed
 
 - icub-main/master now handles RT (FIXME: real-time ?) mode with high priority threads for smoother transmission
 
-- iCub Nancy has "version 1" arms. Joints can be calubrated through similar files as with freen/purple iCub, in robot-configuration.
+- iCub Nancy has "version 1" arms. Joints can be calubrated through similar files as with green/purple iCub, in robot-configuration.
     Calibration is done through matrixe23 (FIXME: not sure about this word) (e.g.) motor encoder -> joint by setting the first 4 columns = 1/4 ... and then ask Julien/Valentina (or changing delta if lazy)
     FIXME : I don't understand this note. Could you help, Marie ?
 
@@ -23,7 +24,7 @@
 
 yarp -> strain, embObjIntertials, embObjMAIS... ON
 inertialSensors OFF
-FIXME: is this something important for us ? meaning ?
+FIXME: is this something important for us ? what's the meaning ?
 
 ## Update firmware
 
@@ -31,7 +32,7 @@ Marco Accame can provide assistance, Valentina Gaggero too.
 
 github.com/robotology/QA/issues/240 : how to update your robot to use 1.8.0; guide to migrate to latest iCub release (applies to CAN and ETH robots)
 
-1. On server computer : pull repositories and copile:
+1. On server computer : pull repositories and compile:
   1. yarp (master)
   2. icub-main (master)
 2. On icub-head/PC104,
