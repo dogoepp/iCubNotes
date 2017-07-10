@@ -129,7 +129,7 @@ Move sourc efiles for PC104 (from icubsrv to icub01 computer)
   - NFS  server
     1. explanation : icub01 hosts
       - 2 directories : `/exports/code` (source for yarp, icub, etc.) and `/exports/local_yarp` (yarp configuration files, shared between icub01 and PC104)
-        > **FIXME:** there is a typo on the wiki for these
+        > **TODO:** there is a typo on the wiki for these
       - exported using NFS and mounted on PC104
     2. install nfs on icub01
     3. create directories `/exports` and children and set permissions
